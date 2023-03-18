@@ -1,0 +1,75 @@
+.navbar-light .navbar-nav .nav-link
+{
+    color:blueviolet;
+    
+}
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color: yellow;
+    text-decoration: underline;
+    
+}
+
+.h1{
+    text-decoration: aqua;
+    
+}
+
+element.style {
+  display: flex;
+  
+  margin:0%;
+  background-color: hsl(0, 0%, 90%);
+  transition: background-color 300ms;
+}
+user agent stylesheet
+img {
+  overflow-clip-margin: content-box;
+  overflow:auto;
+  height: 30px;
+}
+
+
+
+
+.hover {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+  .hover:hover {
+    --_p: 100%
+  }
+  
+  body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-content: center;
+  }
+  h3 {
+    font-family: system-ui, sans-serif;
+    font-size: 3rem;
+    margin:0;
+    cursor: pointer;
+    padding: 0 .1em;
+  }
+h1{
+  font-weight: bolder;
+  font-style:italic;
+  color:rgb(37, 13, 224);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h4{
+  font-weight: bolder;
+  color:rgb(157, 4, 98);
+  font-style:oblique;
+}

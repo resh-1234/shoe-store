@@ -1,0 +1,16 @@
+<br>
+<br>
+<header class="codrops-header">
+  <h1>MENS & WOMENS SHOES COLLECTIONS </h1>	
+</header>
+<div class="wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); grid-gap: 20px;">
+  <div class="card" *ngFor="let i of data">
+      <img [src]="i.image" />
+      <div class="info">
+        <h3>{{ i.name }}</h3>
+        <h5>{{i.desc}}</h5>
+        
+        <button (click)="gotoHere(i.id)">More Items</button>   
+      </div>
+    </div>
+  </div><br>

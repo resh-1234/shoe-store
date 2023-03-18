@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "shoestore-7190c": {
+      "hosting": {
+        "shoestore": [
+          "shoestore-7190c"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "shoestore-7190c"
+  }
+}
