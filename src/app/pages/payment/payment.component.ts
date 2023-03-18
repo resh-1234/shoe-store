@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FireService } from 'src/app/fire.service';
 
 @Component({
-  selector: 'app-contact',
+  selector: 'app-payment',
   templateUrl: './payment.component.html',
   styleUrls: ['./payment.component.css']
 })
@@ -41,8 +41,7 @@ cvv: any;
       mob:this.mob
 
     }
-    this.fire.contact(info)
-    
+    this.fire.submit(info)  
     if(this.name == ''){
       console.log(this.name)
       alert('please enter name')
@@ -77,7 +76,6 @@ cvv: any;
     this.address=''
     this.city=''
     this.zip=''
-    this.mob=''
-    
+    this.mob=''  
   }
 }

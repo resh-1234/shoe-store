@@ -39,6 +39,8 @@ login(){
   this.email1=''
   this.password1=''
 }
+
+
 }
 
 

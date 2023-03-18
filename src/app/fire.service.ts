@@ -10,6 +10,7 @@ export class FireService {
   
   
   
+  
   constructor(private auth:Auth,private router:Router,private fire:Firestore) { }
 
 //signup method()
@@ -50,12 +51,13 @@ contact(data:any){
   const contactcollection=collection(this.fire,'contactDetails')
   addDoc(contactcollection,data).then(res=>{
     alert("Data added succesfully")
+    this.router.navigate(['/'])
   }).catch(err=>{
     alert(err)
   })
  }
 
- //getcontact mthod()
+ //getcontact method()
 
  getcontact(){
   const contactcollection=collection(this.fire,'contactDetails')
@@ -64,11 +66,11 @@ contact(data:any){
 
 
 //payment method()
-payment(data:any){
-  const contactcollection=collection(this.fire,'contactDetails')
-  addDoc(contactcollection,data).then(res=>{
+submit(data:any){
+  const paymentcollection=collection(this.fire,'paymentDetails')
+  addDoc(paymentcollection,data).then(res=>{
     alert("Data added succesfully")
-    this.router.navigate(['/logout'])
+    this.router.navigate(['/'])
   }).catch(err=>{
     alert(err)
   })
