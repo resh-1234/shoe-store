@@ -69,7 +69,7 @@ contact(data:any){
 submit(data:any){
   const paymentcollection=collection(this.fire,'paymentDetails')
   addDoc(paymentcollection,data).then(res=>{
-    alert("Data added succesfully")
+    alert("Your payment is successfull")
     this.router.navigate(['/'])
   }).catch(err=>{
     alert(err)
