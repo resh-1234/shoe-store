@@ -20,7 +20,6 @@ export class OrderComponent {
     // console.warn(MyData);
     
     console.log("name",this.order)
-    alert('please signup your account')
-    this.router.navigate(['/signup'])
+    
   }
 }

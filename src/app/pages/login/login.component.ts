@@ -14,11 +14,9 @@ email1: string='';
 password1: string='';
 cpassword: string='';
 
-
 constructor(private fire:FireService) {
 
 }
-
 register(){
   console.log(this.name)
   console.log(this.email)
@@ -30,8 +28,6 @@ register(){
   this.password=''
   this.cpassword=''
 }
-
-
 login(){
   console.log(this.email1)
   console.log(this.password1)
@@ -39,8 +35,6 @@ login(){
   this.email1=''
   this.password1=''
 }
-
-
 }
 
 

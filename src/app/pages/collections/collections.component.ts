@@ -14,6 +14,8 @@ export class CollectionsComponent {
   
   gotoHere(id: any){
     localStorage.setItem('id',id);
-    this.router.navigate(['/order']);
+    
+    alert('please signup your account')
+    this.router.navigate(['/login'])
   }
 }

@@ -21,20 +21,40 @@ export class ContactComponent {
     })
   }
 
-  contact(){
+  submit(){
+    if(!this.name||!this.email||!this.msg){
+      alert('please fill the fields');
+      return;
+    }
     let info={
       name:this.name,
       email:this.email,
       msg:this.msg
 
     }
-    this.fire.contact(info)
-    console.log(this.name)
-    console.log(this.email)
-   
+    this.fire.submit(info)  
+    if(this.name == ''){
+      console.log(this.name)
+      alert('please enter name')
+      return;
+    }
+    this.fire.submit(info)  
+    if(this.name == ''){
+      console.log(this.email)
+      alert('please enter your email')
+      return;
+    }
+    this.fire.submit(info)  
+    if(this.name == ''){
+      console.log(this.msg)
+      alert('please enter the msg')
+      return;
+    } 
     this.name=''
     this.email=''
     this.msg=''
   }
 
 }
+  
+
